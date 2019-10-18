@@ -18,16 +18,19 @@
     <v-content>
       <HelloWorld/>
     </v-content>
+    <AppFooter></AppFooter>
   </v-app>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld';
+import AppFooter from './components/footer';
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
+    AppFooter,
   },
   data: () => ({
     //

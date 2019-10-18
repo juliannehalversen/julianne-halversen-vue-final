@@ -86,6 +86,9 @@
 
 <script>
 export default {
+  theme: {
+    dark: true,
+  },
   data: () => ({
     ecosystem: [
       {
