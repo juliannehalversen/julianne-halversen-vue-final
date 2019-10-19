@@ -17,6 +17,7 @@
 
     <v-content>
       <HelloWorld/>
+      <Form></Form>
     </v-content>
     <AppFooter></AppFooter>
   </v-app>
@@ -25,12 +26,14 @@
 <script>
 import HelloWorld from './components/HelloWorld';
 import AppFooter from './components/footer';
+import Form from './components/form';
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
     AppFooter,
+    Form,
   },
   data: () => ({
     //
