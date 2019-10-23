@@ -1,5 +1,6 @@
 <template>
   <v-app>
+    <!--
     <v-app-bar app>
       <v-toolbar-title class="headline text-uppercase">
         <span>Vuetify</span>
@@ -14,26 +15,27 @@
         <span class="mr-2">Latest Release</span>
       </v-btn>
     </v-app-bar>
-
+-->
     <v-content>
-      <HelloWorld/>
       <Form></Form>
     </v-content>
     <AppFooter></AppFooter>
+    <person-grid></person-grid>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
 import AppFooter from './components/footer';
 import Form from './components/form';
+import PersonGrid from './components/PersonGrid';
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
     AppFooter,
     Form,
+    PersonGrid,
   },
   data: () => ({
     //
