@@ -6,6 +6,12 @@ import vuetify from './plugins/vuetify';
 
 Vue.config.productionTip = false
 
+/*
+Vue.filter('to-uppercase', function() {
+  return value.toUpperCase();
+});
+*/
+
 new Vue({
   router,
   store,
