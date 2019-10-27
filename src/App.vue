@@ -17,6 +17,11 @@
     </v-app-bar>
 
     <v-content>
+      <button class="btn btn-primary" @click="show = !show">Show Alert</button>
+      <transition name="fade">
+        <div class="alert alert-info" v-if="show">this is some info</div>
+      </transition>
+
       <Form></Form>
       <PersonGrid :people="people"></PersonGrid>
       <v-btn @click="getData" class="dataBtn">Get Data</v-btn>
@@ -59,7 +64,8 @@ export default {
   data: () => ({
     people: [],
     //planets: [],
-    fetchedData: []
+    fetchedData: [],
+    show: false,
   }),
   methods: {
     getData() {
@@ -79,5 +85,18 @@ export default {
   color: red;
   width: 300px;
 
+}
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  transition: opacity 2s;
+}
+.fade-leave {
+  /*opacity: 1; */
+}
+.fade-leave-active {
+   transition: opacity 2s;
+   opacity: 0;
 }
 </style>
