@@ -2,7 +2,7 @@
     <v-card>
         <v-card-title>
             <div>
-                <h3> {{ person.name }} </h3>
+                <h3 class="name"> {{ person.name }} </h3>
                 <br>
                 <div>
                     <span> Born: {{ person.birth_year }} </span> <br>
@@ -38,5 +38,7 @@ export default {
 </script>
 
 <style scoped>
-
+h3.name {
+    color: #55C7FB;
+}
 </style>

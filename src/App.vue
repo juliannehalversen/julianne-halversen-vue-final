@@ -19,7 +19,7 @@
     <v-content>
       <Form></Form>
       <PersonGrid :people="people"></PersonGrid>
-      <v-btn @click="getData">Get Data</v-btn>
+      <v-btn @click="getData" class="dataBtn">Get Data</v-btn>
     </v-content>
     <AppFooter></AppFooter>
   </v-app>
@@ -73,3 +73,11 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.dataBtn {
+  color: red;
+  width: 300px;
+
+}
+</style>
