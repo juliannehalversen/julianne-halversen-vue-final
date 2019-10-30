@@ -27,6 +27,7 @@
       </transition>
 <br>
 <br>
+<!--
       <button @click="load = !load">Load / Remove Element</button>
       <transition
         @before-enter="beforeEnter"
@@ -43,12 +44,11 @@
       
         <div style="width: 100px; height: 100px; background-color: lightgreen;" v-if="load"></div>
       </transition>
-
+-->
       <Form></Form>
-      <transition-group name="fade">
-      <PersonGrid :people="people"  :key="testperson" ></PersonGrid>
-      </transition-group>
       
+      <PersonGrid :people="people"></PersonGrid>
+     
       <v-btn @click="getData" class="dataBtn">Get Data</v-btn>
     </v-content>
     <AppFooter></AppFooter>
@@ -103,7 +103,7 @@ export default {
         vm.people = response.data.results;
       }).catch(error => console.log(error))
     },
-    /*js animation hooks*/ 
+    /*
   beforeEnter(el) {
     console.log('beforeEnter');
     this.elementWidth = 100;
@@ -149,9 +149,9 @@ export default {
   },
   leaveCancelled(el) {
     console.log('leaveCancelled');
-  },
+  },*/ 
 },
-  
+ 
 };
 </script>
 
