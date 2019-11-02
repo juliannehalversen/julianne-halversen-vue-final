@@ -57,6 +57,8 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
 data: () => ({
     valid: true,
@@ -84,6 +86,14 @@ data: () => ({
     validate () {
       if (this.$refs.form.validate()) {
         this.snackbar = true
+        console.log(this.name);
+
+        //let vm = this
+        return axios.post('https://vuejs-form-validation-5441b.firebaseio.com/data.json, this.user').then
+        (response => {
+          console.log(response);
+          //vm.people = response.data.results;
+        }).catch(error => console.log(error))
       }
     },
     reset () {
