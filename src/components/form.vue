@@ -46,16 +46,11 @@
         Reset Form
       </v-btn>
   
-      <v-btn
-        color="warning"
-        @click="resetValidation"
-      >
-        Reset Validation
-      </v-btn>
-
-      <v-btn color="pink" @click="fetchData">Get My Submitted Data</v-btn>
-      <ul class="list-group">
-        <li class="list-group-item" v-for="u in users">{{ u.username }} - {{ u.email }}</li>
+      <v-btn color="warning" @click="fetchData">Get My Submitted Data</v-btn>
+      <br>
+      <br>
+      <ul>
+        <li v-for="u in users">{{ u.name }} - {{ u.email }}</li>
       </ul>
 
     </v-form>
@@ -124,11 +119,18 @@ data: () => ({
     reset () {
       this.$refs.form.reset()
     },
-    resetValidation () {
-      this.$refs.form.resetValidation()
-    },
     fetchData () {
-
+      this.$http.get('https://vuejs-form-validation-5441b.firebaseio.com/data.json')
+        .then(response => {
+          return response.json();
+        })
+        .then(data => {
+          const resultArray = [];
+          for (let key in data) {
+            resultArray.push(data[key]);
+          }
+          this.users = resultArray;
+        });
     },
   },
 };
