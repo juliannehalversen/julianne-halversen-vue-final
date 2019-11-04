@@ -1,5 +1,9 @@
 <template>
 <div>
+  <AppHeader></AppHeader>
+  <br>
+  <br>
+  <br>
     <v-form
       ref="form"
       class="formStyle"
@@ -54,13 +58,20 @@
       </ul>
 
     </v-form>
+    <!--<AppFooter></AppFooter>-->
 </div>
 </template>
 
 <script>
 import axios from 'axios';
+import AppHeader from '../components/header';
+import AppFooter from '../components/footer';
 
 export default {
+  components: {
+    AppHeader,
+    AppFooter,
+  },
 /* default form data from Vuetify, restructured to object for VueResource post call
 data: () => ({
     valid: true,
