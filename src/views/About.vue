@@ -8,7 +8,7 @@
             <div class="crawl">
 
                 <div class="title">
-                <p>DGM 3790</p>
+                <h3>DGM 3790</h3>
                 <h1>A New Hope</h1>
                 </div>
                 

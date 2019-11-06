@@ -4,10 +4,7 @@
 <AppHeader></AppHeader>
     <v-content>
         <router-view></router-view>
-
-
-
-
+      <!--
       <button @click="show = !show">Show Alert</button>
       <transition name="fade">
         <div v-if="show">this is some info</div>
@@ -16,8 +13,7 @@
       <transition name="slide" type="animation" appear>
         <div v-if="show">this is some info</div>
       </transition>
-<br>
-<br>
+      -->
 <!--
       <button @click="load = !load">Load / Remove Element</button>
       <transition
@@ -35,12 +31,10 @@
       
         <div style="width: 100px; height: 100px; background-color: lightgreen;" v-if="load"></div>
       </transition>
--->
-      <Form></Form>
-      
+-->   
       <PersonGrid :people="people"></PersonGrid>
-     
-      <v-btn @click="getData" class="dataBtn">Get Data</v-btn>
+
+      <v-btn @click="getData" class="dataBtn" id="getDataBtn">Get Data</v-btn>
     </v-content>
     <AppFooter></AppFooter>
   </v-app>
@@ -134,16 +128,16 @@ export default {
 .dataBtn {
   color: red;
   width: 300px;
-
 }
+#getDataBtn {
+  margin-left: 10%;
+}
+/*
 .fade-enter {
   opacity: 0;
 }
 .fade-enter-active {
   transition: opacity 2s;
-}
-.fade-leave {
-  /*opacity: 1; */
 }
 .fade-leave-active {
    transition: opacity 2s;
@@ -182,4 +176,5 @@ export default {
     transform: translateY(20px);
   }
 }
+*/
 </style>

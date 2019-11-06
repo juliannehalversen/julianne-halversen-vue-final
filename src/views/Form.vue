@@ -53,9 +53,16 @@
       <v-btn color="warning" @click="fetchData">Get My Submitted Data</v-btn>
       <br>
       <br>
+      <!--
       <ul>
         <li v-for="u in users">{{ u.name }} - {{ u.email }}</li>
       </ul>
+      -->
+      <v-list-item>
+        <v-list-item-content>
+            <v-list-item-title v-for="u in users">Name: {{ u.name }} <br> Email: {{ u.email }}<br><br></v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
 
     </v-form>
     <!--<AppFooter></AppFooter>-->
