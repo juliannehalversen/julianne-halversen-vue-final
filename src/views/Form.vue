@@ -65,6 +65,7 @@
       </v-list-item>
 
     </v-form>
+    <img src="../assets/movieposter.jpg" style="width: 100%">
     <!--<AppFooter></AppFooter>-->
 </div>
 </template>

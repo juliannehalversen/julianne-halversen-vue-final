@@ -1,5 +1,6 @@
 <template>
   <v-app>
+    
 
 <AppHeader></AppHeader>
     <v-content>
@@ -36,7 +37,9 @@
 
       <v-btn @click="getData" class="dataBtn" id="getDataBtn">Get Data</v-btn>
     </v-content>
+    
     <AppFooter></AppFooter>
+
   </v-app>
 </template>
 
@@ -61,6 +64,7 @@ export default {
     show: false,
     load: true,
     elementWidth: 100,
+    show: false,
   }),
   
   methods: {
