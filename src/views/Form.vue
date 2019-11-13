@@ -57,12 +57,23 @@
       <ul>
         <li v-for="u in users">{{ u.name }} - {{ u.email }}</li>
       </ul>
-      -->
+      
       <v-list-item>
         <v-list-item-content>
             <v-list-item-title v-for="u in users">Name: {{ u.name }} <br> Email: {{ u.email }}<br><br></v-list-item-title>
         </v-list-item-content>
       </v-list-item>
+    -->
+    
+    <v-expansion-panels>
+      <v-expansion-panel
+        v-for="u in users" :key="u">
+      <v-expansion-panel-header>{{ u.name }}</v-expansion-panel-header>
+        <v-expansion-panel-content>
+          {{ u.email }}
+        </v-expansion-panel-content>
+      </v-expansion-panel>
+  </v-expansion-panels>
 
     </v-form>
     <img src="../assets/movieposter.jpg" style="width: 100%">
