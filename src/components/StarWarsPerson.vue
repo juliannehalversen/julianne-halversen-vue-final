@@ -18,6 +18,7 @@
                         <!--{{ person.gender | toUppercase }} -->
                     </v-list-item-content>
                 </v-list-item>
+                <v-btn @click="addFavorite">Add to Favorites</v-btn><br>
             </div>
             </transition>
             <v-btn @click="show = !show">More Info</v-btn><br>
@@ -27,10 +28,30 @@
 
 <script>
 export default {
+    data() {
+        return {
+            show: false,
+            favorites: [],
+        }
+    },
+    
+    /*
     data: () => ({
     show: false,
-  }),
+  }), */
     props: ["person"],
+    methods: {
+        addFavorite () {
+            const favorites = [];
+            /*
+            for (let key in data) {
+                
+            } */
+            favorites.push("hello world");
+            console.log(favorites);
+            //this.users = resultArray;
+        },
+    },
     /* getting error that it is not a function
     filters: {
         toUppercase(value) {

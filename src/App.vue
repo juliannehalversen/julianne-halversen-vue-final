@@ -15,5 +15,7 @@ export default {
 </script>
 
 <style scoped>
-
+* {
+  background-image: url('./assets/stars1.jpg');
+}
 </style>

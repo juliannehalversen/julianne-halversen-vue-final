@@ -38,8 +38,9 @@
       <v-btn @click="getData" class="dataBtn" id="getDataBtn">Get Data</v-btn>
     </v-content>
     
+    <Favorites></Favorites>
+    
     <AppFooter></AppFooter>
-
   </v-app>
 </template>
 
@@ -48,6 +49,7 @@ import axios from 'axios';
 import AppHeader from '../components/header';
 import AppFooter from '../components/footer';
 import PersonGrid from '../components/PersonGrid';
+import Favorites from '../components/favorites';
 
 
 export default {
@@ -56,6 +58,7 @@ export default {
     AppHeader,
     AppFooter,
     PersonGrid,
+    Favorites,
   },
   data: () => ({
     people: [],
@@ -135,6 +138,13 @@ export default {
 }
 #getDataBtn {
   margin-left: 10%;
+  border: 1px solid white;
+}
+* {
+  background-image: url('../assets/stars2.jpg');
+}
+.v-content__wrap {
+  background-color: yellow;
 }
 /*
 .fade-enter {
