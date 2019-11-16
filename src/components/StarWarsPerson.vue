@@ -18,7 +18,7 @@
                         <!--{{ person.gender | toUppercase }} -->
                     </v-list-item-content>
                 </v-list-item>
-                <v-btn @click="addFavorite">Add to Favorites</v-btn><br>
+                <v-btn @click="addFavorite">Add to Favorites</v-btn><br><br>
             </div>
             </transition>
             <v-btn @click="show = !show">More Info</v-btn><br>

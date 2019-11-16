@@ -17,7 +17,7 @@ export default {
     props: ["people"],
     components: {
         StarWarsPerson
-    }
+    },
 }
 </script>
 

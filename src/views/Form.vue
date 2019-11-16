@@ -160,7 +160,7 @@ data: () => ({
             resultArray.push(data[key]);
           }
           this.users = resultArray;
-        });
+        }); 
     },
   },
 };

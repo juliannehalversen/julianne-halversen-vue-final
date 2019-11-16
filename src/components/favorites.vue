@@ -9,8 +9,9 @@
             class="text-center"
             cols="12"
         >
-            <v-btn @click="showFavorite">See Favorites</v-btn>
-            <strong>Favorites section</strong>
+        <h1>Favorites section</h1>
+         <v-btn @click="showFavorite">See Favorites</v-btn>
+        <!--<p>{{ favorite }}</p>-->
         </v-col>
         </v-footer>
     </v-card>
@@ -18,11 +19,18 @@
 
 <script>
 export default {
+   /*
+   computed: {
+        favorite() {
+            return this.$store.getters.favoritePerson;
+        }
+    },
+    */
     methods: {
         showFavorite () {
             console.log(this.$store.state.favorites);
         },
-    }
+    },
 }
 </script>
 
