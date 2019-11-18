@@ -6,12 +6,11 @@ Vue.use(Vuex);
 export const store = new Vuex.Store({
   state: {
     favorites: [],
+    favoritePersonInfo: [],
   },
-  /*
   getters: {
-    favoritePerson: state => {
-      return state.favorites;
-    },
+    personInfo (state) {
+      return state.favoritePersonInfo;
+    }
   },
-  */
 });

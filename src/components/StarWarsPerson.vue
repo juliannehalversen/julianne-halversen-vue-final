@@ -31,34 +31,26 @@ export default {
     data() {
         return {
             show: false,
-            favorites: [],
+
         }
     },
-    
-    /*
-    data: () => ({
-    show: false,
-  }), */
+
     props: ["person"],
     methods: {
         addFavorite () {
-            const favorites = [];
-            /*
-            for (let key in data) {
-                
-            } */
-            favorites.push("hello world");
-            console.log(favorites);
-            //this.users = resultArray;
+            let favoritePersonInfo = {
+                personName: this.person.name,
+                /*
+                personGender: this.person.gender,
+                personBirthYear: this.person.birth_year,
+                */
+            };
+            //let favorites = [];
+            //favorites.push(favoritePersonInfo);
+            console.log(favoritePersonInfo);
+            this.$store.state.favorites.push(this.person.name);
         },
     },
-    /* getting error that it is not a function
-    filters: {
-        toUppercase(value) {
-            return value.toUppercase();
-        }
-    }
-    */
 }
 </script>
 
