@@ -27,6 +27,7 @@
         </v-card-text>
     </v-card>
         <!--<h3>{{ this.$store.state.favorites.toString().replace(/,/g, ", ") }} </h3> -->
+        <!--
     <v-card>
         <v-card-title>
             <div>
@@ -45,6 +46,7 @@
                 </v-list-item>
         </v-card-text>
     </v-card>
+    -->
         </v-footer>
     </v-card>
 </template>
