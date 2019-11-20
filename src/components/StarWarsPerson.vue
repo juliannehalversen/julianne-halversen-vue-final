@@ -40,15 +40,15 @@ export default {
         addFavorite () {
             let favoritePersonInfo = {
                 personName: this.person.name,
-                /*
                 personGender: this.person.gender,
                 personBirthYear: this.person.birth_year,
-                */
+                personEyeColor: this.person.eye_color,
+                personHeight: this.person.height,       
             };
             //let favorites = [];
             //favorites.push(favoritePersonInfo);
             console.log(favoritePersonInfo);
-            this.$store.state.favorites.push(this.person.name);
+            this.$store.state.favorites.push(favoritePersonInfo);
         },
     },
 }

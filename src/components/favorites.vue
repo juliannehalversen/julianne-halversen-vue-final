@@ -1,79 +1,57 @@
 
-    <template>
+<template>
     <v-card height="100">
         <v-footer
         absolute
         class="font-weight-medium"
         >
-        <v-col
-            class="text-center"
-            cols="12"
-        >
-        <h1>Favorites section</h1>
-         <v-btn @click="showFavorite">Your Favorite People</v-btn>
-<!--
-        <v-row>
-            <v-col cols="3" v-for="favorite in favorites" :key="favorites.name">
-                <h1>{{ this.$store.state.favorites.toString() }} </h1>
-            </v-col>
-        </v-row>
-        
 
+        <h1>Your Favorite People:</h1>
 
-
-         <v-card>
+        <v-card>
         <v-card-title>
             <div>
-                <h3 class="name"> {{ this.$store.state.favorites }} </h3> 
+                <h3> {{ this.$store.state.favorites[0].personName }} </h3> 
             </div>
         </v-card-title>
 
         <v-card-text>
-            <transition name="fade">
-            <div v-if="show" class="extraInfo">
                 <v-list-item>
                     <v-list-item-content>
-                        <v-list-item-title>Born: {{ person.birth_year }}</v-list-item-title>
-                        <v-list-item-title>Gender: {{ person.gender }}</v-list-item-title>
-                        <v-list-item-title>Eye Color: {{ person.eye_color }}</v-list-item-title>
-                        <v-list-item-title>Height: {{ person.height }}cm</v-list-item-title>
+                        <v-list-item-title>Born: {{ this.$store.state.favorites[0].personBirthYear }}</v-list-item-title>
+                        <v-list-item-title>Gender: {{ this.$store.state.favorites[0].personGender }}</v-list-item-title>
+                        <v-list-item-title>Eye Color: {{ this.$store.state.favorites[0].personEyeColor }}</v-list-item-title>
+                        <v-list-item-title>Height: {{ this.$store.state.favorites[0].personHeight }}cm</v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
-            </div>
-            </transition>
-            <v-btn @click="show = !show">More Info</v-btn><br> 
         </v-card-text>
-         </v-card>
--->        
-        <h3>{{ this.$store.state.favorites.toString() }} </h3>
-        </v-col>
+    </v-card>
+        <!--<h3>{{ this.$store.state.favorites.toString().replace(/,/g, ", ") }} </h3> -->
+    <v-card>
+        <v-card-title>
+            <div>
+                <h3> {{ this.$store.state.favorites[1].personName }} </h3> 
+            </div>
+        </v-card-title>
+
+        <v-card-text>
+                <v-list-item>
+                    <v-list-item-content>
+                        <v-list-item-title>Born: {{ this.$store.state.favorites[1].personBirthYear }}</v-list-item-title>
+                        <v-list-item-title>Gender: {{ this.$store.state.favorites[1].personGender }}</v-list-item-title>
+                        <v-list-item-title>Eye Color: {{ this.$store.state.favorites[1].personEyeColor }}</v-list-item-title>
+                        <v-list-item-title>Height: {{ this.$store.state.favorites[1].personHeight }}cm</v-list-item-title>
+                    </v-list-item-content>
+                </v-list-item>
+        </v-card-text>
+    </v-card>
         </v-footer>
     </v-card>
-    </template>
+</template>
 
 <script>
 export default {
-    data() {
-        return {
-            personName,
 
-        }
-    },
-   /*
-   computed: {
-        favorite() {
-            return this.$store.getters.favoritePerson;
-        }
-    },
-    */
-   
-    methods: {
-        showFavorite () {
-            console.log(this.$store.state.favorites);
-            let personName = this.$store.state.favorites.toString();
-            console.log(personName);
-        },
-    },
 }
 </script>
 

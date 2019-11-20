@@ -1,10 +1,8 @@
 <template>
   <v-app>
-    
-
-<AppHeader></AppHeader>
+    <AppHeader></AppHeader>
     <v-content>
-        <router-view></router-view>
+      <router-view></router-view>
       <!--
       <button @click="show = !show">Show Alert</button>
       <transition name="fade">
@@ -15,7 +13,7 @@
         <div v-if="show">this is some info</div>
       </transition>
       -->
-<!--
+      <!--
       <button @click="load = !load">Load / Remove Element</button>
       <transition
         @before-enter="beforeEnter"
@@ -32,33 +30,30 @@
       
         <div style="width: 100px; height: 100px; background-color: lightgreen;" v-if="load"></div>
       </transition>
--->   
+      -->
       <PersonGrid :people="people"></PersonGrid>
 
       <v-btn @click="getData" class="dataBtn" id="getDataBtn">Get Data</v-btn>
     </v-content>
-    
+
     <Favorites></Favorites>
-    
-    <AppFooter></AppFooter>
   </v-app>
 </template>
 
 <script>
-import axios from 'axios';
-import AppHeader from '../components/header';
-import AppFooter from '../components/footer';
-import PersonGrid from '../components/PersonGrid';
-import Favorites from '../components/favorites';
-
+import axios from "axios";
+import AppHeader from "../components/header";
+//import AppFooter from '../components/footer';
+import PersonGrid from "../components/PersonGrid";
+import Favorites from "../components/favorites";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     AppHeader,
-    AppFooter,
+    //AppFooter,
     PersonGrid,
-    Favorites,
+    Favorites
   },
   data: () => ({
     people: [],
@@ -67,18 +62,20 @@ export default {
     show: false,
     load: true,
     elementWidth: 100,
-    show: false,
+    show: false
   }),
-  
+
   methods: {
     getData() {
-      let vm = this
-      return axios.get('https://swapi.co/api/people/').then
-      (response => {
-        console.log(response);
-        vm.people = response.data.results;
-      }).catch(error => console.log(error))
-    },
+      let vm = this;
+      return axios
+        .get("https://swapi.co/api/people/")
+        .then(response => {
+          console.log(response);
+          vm.people = response.data.results;
+        })
+        .catch(error => console.log(error));
+    }
     /*
   beforeEnter(el) {
     console.log('beforeEnter');
@@ -125,9 +122,8 @@ export default {
   },
   leaveCancelled(el) {
     console.log('leaveCancelled');
-  },*/ 
-},
- 
+  },*/
+  }
 };
 </script>
 
@@ -135,13 +131,14 @@ export default {
 .dataBtn {
   color: red;
   width: 300px;
+  margin-bottom: 50px;
 }
 #getDataBtn {
   margin-left: 10%;
   border: 1px solid white;
 }
 * {
-  background-image: url('../assets/stars2.jpg');
+  background-image: url("../assets/stars2.jpg");
 }
 .v-content__wrap {
   background-color: yellow;
