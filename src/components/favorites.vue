@@ -27,7 +27,7 @@
         </v-card-text>
     </v-card>
         <!--<h3>{{ this.$store.state.favorites.toString().replace(/,/g, ", ") }} </h3> -->
-        <!--
+        
     <v-card>
         <v-card-title>
             <div>
@@ -46,7 +46,7 @@
                 </v-list-item>
         </v-card-text>
     </v-card>
-    -->
+   <h1>test git</h1>
         </v-footer>
     </v-card>
 </template>
