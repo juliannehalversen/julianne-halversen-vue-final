@@ -41,7 +41,7 @@
                         <v-list-item-title>Born: {{ this.$store.state.favorites[1].personBirthYear }}</v-list-item-title>
                         <v-list-item-title>Gender: {{ this.$store.state.favorites[1].personGender }}</v-list-item-title>
                         <v-list-item-title>Eye Color: {{ this.$store.state.favorites[1].personEyeColor }}</v-list-item-title>
-                        <v-list-item-title>Height: {{ this.$store.state.favorites[1].personHeight }}cm</v-list-item-title>
+                        
                     </v-list-item-content>
                 </v-list-item>
         </v-card-text>
