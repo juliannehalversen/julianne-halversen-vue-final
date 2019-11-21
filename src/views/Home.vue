@@ -32,7 +32,7 @@
       </transition>
       -->
       <PersonGrid :people="people"></PersonGrid>
-
+<p>Test</p>
       <v-btn @click="getData" class="dataBtn" id="getDataBtn">Get Data</v-btn>
     </v-content>
 
