@@ -47,7 +47,7 @@
                 </v-list-item>
         </v-card-text>
     </v-card>
-   <p>test</p>
+  
         </v-footer>
     </v-card>
 </template>
