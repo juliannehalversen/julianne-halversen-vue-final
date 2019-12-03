@@ -51,7 +51,6 @@
     </v-card>
 -->
 
-<h1>test</h1>
         </v-footer>
     </v-card>
 </template>

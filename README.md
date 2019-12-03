@@ -1,5 +1,8 @@
 # julianne-halversen-vue-final
 
+## Netlify URL:
+https://romantic-pasteur-a7814b.netlify.com/
+
 ## Project setup
 ```
 yarn install
