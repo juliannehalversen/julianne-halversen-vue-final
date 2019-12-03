@@ -2,7 +2,7 @@
     <v-card>
         <v-card-title>
             <div>
-                <h3 class="name"> {{ person.name }} </h3> 
+                <h4 class="name"> {{ person.name }} </h4> 
             </div>
         </v-card-title>
 
@@ -55,7 +55,7 @@ export default {
 </script>
 
 <style scoped>
-h3.name {
+h4.name {
     color: #55C7FB;
 }
 .extraInfo h2 {

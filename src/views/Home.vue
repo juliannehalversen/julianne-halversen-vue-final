@@ -31,9 +31,28 @@
         <div style="width: 100px; height: 100px; background-color: lightgreen;" v-if="load"></div>
       </transition>
       -->
-      <PersonGrid :people="people"></PersonGrid>
-      <v-btn @click="getData" class="dataBtn" id="getDataBtn">Get Data</v-btn>
+      <v-container>
+        <ul >
+  <li v-for="value in object">
+    {{ object.title }}
+  </li>
+</ul>
+<div v-for="(value, name, index) in object">
+  {{ index }}. {{ name }}: {{ value }}
+</div>
+        <!--<h1>Star Wars People</h1>-->
+        <PersonGrid :people="people"></PersonGrid>
+        <v-row>
+            <v-col cols="3">
+               <v-btn @click="getData" class="dataBtn" id="getDataBtn">Get Data</v-btn>
+            </v-col>
+        </v-row>
+    </v-container>
+      
     </v-content>
+
+
+
 
     <Favorites></Favorites>
   </v-app>
@@ -61,7 +80,13 @@ export default {
     show: false,
     load: true,
     elementWidth: 100,
-    show: false
+    show: false,
+    object: {
+      title: 'How to do lists in Vue',
+      author: 'Jane Doe',
+      publishedAt: '2016-04-10'
+    }
+
   }),
 
   methods: {
@@ -74,7 +99,7 @@ export default {
           vm.people = response.data.results;
         })
         .catch(error => console.log(error));
-    }
+    },
     /*
   beforeEnter(el) {
     console.log('beforeEnter');
@@ -130,7 +155,7 @@ export default {
 .dataBtn {
   color: red;
   width: 300px;
-  margin-bottom: 50px;
+  margin-bottom: 170px;
 }
 #getDataBtn {
   margin-left: 10%;
