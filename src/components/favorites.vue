@@ -70,12 +70,10 @@ export default {
             for ( let i = 0; i < this.$store.state.favorites.length; i++) {
                 let personName = this.$store.state.favorites[i].personName;
                 console.log(personName);  
-            }
-            
-           
+            }  
+            console.log(favorites);
         }
     },
-    
 }
 </script>
 
