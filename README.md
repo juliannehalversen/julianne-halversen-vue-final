@@ -9,13 +9,12 @@ yarn install
 ```
 
 ### Encapsulate your code as VueJS single-file components
-```
-yarn run serve
-```
+
+[Components](../blob/master/src/components)
 
 ### Work with the Vue-CLI to create and manage your project within a real development toolset
 
-[I'm a relative reference to a repository file](../blob/master/package.json)
+[package.json](../blob/master/package.json)
 
 
 ### Properly use Git for your source version control with an established record of at least 4 days of commits each week from October 15th through December 6th
