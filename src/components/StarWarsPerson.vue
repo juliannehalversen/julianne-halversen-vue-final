@@ -47,8 +47,8 @@ export default {
             };
             //let favorites = [];
             //favorites.push(favoritePersonInfo);
-            console.log(favoritePersonInfo);
             this.$store.state.favorites.push(favoritePersonInfo);
+            console.log(favoritePersonInfo);
         },
     },
 }

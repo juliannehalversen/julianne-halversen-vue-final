@@ -10,7 +10,7 @@ yarn install
 
 ### Encapsulate your code as VueJS single-file components
 
-[Components](../blob/master/src/components)
+[Home.vue](../blob/master/src/views/Home.vue)
 
 ### Work with the Vue-CLI to create and manage your project within a real development toolset
 

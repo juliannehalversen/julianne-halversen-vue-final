@@ -1,6 +1,6 @@
 <template>
     <v-container>
-         <h1>Star Wars People</h1> 
+        <!--<h1>Star Wars People</h1>-->
         <v-row>
             <v-col cols="3" v-for="person in people" :key="person.name">
                 <StarWarsPerson :person="person"></StarWarsPerson>

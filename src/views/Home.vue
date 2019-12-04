@@ -30,7 +30,7 @@
       
         <div style="width: 100px; height: 100px; background-color: lightgreen;" v-if="load"></div>
       </transition>
-      -->
+      
       <v-container>
         <ul >
   <li v-for="value in object">
@@ -40,7 +40,10 @@
 <div v-for="(value, name, index) in object">
   {{ index }}. {{ name }}: {{ value }}
 </div>
+-->
         <!--<h1>Star Wars People</h1>-->
+        <v-container>
+          <h1>Star Wars People</h1>
         <PersonGrid :people="people"></PersonGrid>
         <v-row>
             <v-col cols="3">
@@ -81,12 +84,6 @@ export default {
     load: true,
     elementWidth: 100,
     show: false,
-    object: {
-      title: 'How to do lists in Vue',
-      author: 'Jane Doe',
-      publishedAt: '2016-04-10'
-    }
-
   }),
 
   methods: {
@@ -155,13 +152,16 @@ export default {
 .dataBtn {
   color: red;
   width: 300px;
-  margin-bottom: 170px;
+  margin-bottom: 30px;
 }
 #getDataBtn {
-  margin-left: 10%;
+  /*margin-left: 10%;*/
   border: 1px solid white;
 }
 * {
+  background-image: url("../assets/stars2.jpg");
+}
+.theme--dark.v-application {
   background-image: url("../assets/stars2.jpg");
 }
 .v-content__wrap {

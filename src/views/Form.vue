@@ -76,7 +76,7 @@
   </v-expansion-panels>
 
     </v-form>
-    <img src="../assets/movieposter.jpg" style="width: 100%">
+    <img src="../assets/movieposter.jpg" style="width: 50%">
     <!--<AppFooter></AppFooter>-->
 </div>
 </template>
