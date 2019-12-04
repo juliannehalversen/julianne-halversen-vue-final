@@ -15,7 +15,7 @@ yarn run serve
 
 ### Work with the Vue-CLI to create and manage your project within a real development toolset
 ```
-[I'm a relative reference to a repository file](../blob/master/package.json)
+https://github.com/juliannehalversen/julianne-halversen-vue-final/blob/master/package.json
 ```
 
 ### Properly use Git for your source version control with an established record of at least 4 days of commits each week from October 15th through December 6th
