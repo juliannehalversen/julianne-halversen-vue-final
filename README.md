@@ -21,20 +21,20 @@ https://github.com/juliannehalversen
 
 ### Allow communication between components using props, custom events, or local store
 
-[favorites.vue](../master/components/favorites.vue) and [PersonGrid.vue](../master/components/PersonGrid.vue) and [StarWarsPerson.vue](../master/components/StarWarsPerson.vue) 
+[favorites.vue](../master/src/components/favorites.vue) and [PersonGrid.vue](../master/src/components/PersonGrid.vue) and [StarWarsPerson.vue](../master/src/components/StarWarsPerson.vue) 
 
 ### Present a form for user input that provides useful form validation and feedback
 
-[Form.vue](../master/views/Form.vue)
+[Form.vue](../master/src/views/Form.vue)
 
 ### Create a custom directive and use it on at least one of your components.
 
-[header.vue](../master/components/header.vue) used in [Home.vue](../master/src/views/Home.vue)
+[header.vue](../master/src/components/header.vue) used in [Home.vue](../master/src/views/Home.vue)
 #### Title changes color in header
 
 ### Use a mix of animations and transitions to enhance some aspects of your project
 
-[StarWarsPerson.vue](../master/components/StarWarsPerson.vue) and [About.vue](../master/src/views/About.vue)
+[StarWarsPerson.vue](../master/src/components/StarWarsPerson.vue) and [About.vue](../master/src/views/About.vue)
 #### animations/transitions are on the Star Wars people cards
 
 ### Connect to a server using HTTP and display retrieved data (use vue-resource or Axios)
