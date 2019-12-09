@@ -21,7 +21,7 @@ https://github.com/juliannehalversen
 
 ### Allow communication between components using props, custom events, or local store
 
-[favorites.vue](../blob/master/components/favorites.vue)
+[favorites.vue](../blob/master/components/favorites.vue) and [PersonGrid.vue](../blob/master/components/PersonGrid.vue) and [StarWarsPerson.vue](../blob/master/components/StarWarsPerson.vue) 
 
 ### Present a form for user input that provides useful form validation and feedback
 
