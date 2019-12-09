@@ -5,7 +5,7 @@ https://romantic-pasteur-a7814b.netlify.com/
 
 ### Effectively use conditional logic and JavaScript array methods to render large lists
 
-[Home.vue](../master/src/views/Home.vue)
+[Home.vue](../master/src/views/Home.vue) 
 
 ### Encapsulate your code as VueJS single-file components
 
