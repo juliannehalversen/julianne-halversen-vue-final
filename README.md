@@ -27,9 +27,15 @@ https://github.com/juliannehalversen
 
 [Form.vue](../blob/master/views/Form.vue)
 
+### Create a custom directive and use it on at least one of your components.
+
+[Home.vue](../blob/master/src/views/Home.vue)
+#### Title changes color in header
+
 ### Use a mix of animations and transitions to enhance some aspects of your project
 
 [StarWarsPerson.vue](../blob/master/components/StarWarsPerson.vue)
+#### animations/transitions are on the Star Wars people cards
 
 ### Connect to a server using HTTP and display retrieved data (use vue-resource or Axios)
 

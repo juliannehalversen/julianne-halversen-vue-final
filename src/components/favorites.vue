@@ -1,31 +1,4 @@
-
 <template>
-<!--
-    <v-card height="100">
-        <v-footer
-        absolute
-        class="font-weight-medium"
-        >
-
-        <h1>Your Favorite People:</h1>
-
-
-            <v-card>
-                <v-card-text>
-                        <v-list-item>
-                            <v-list-item-content v-for="(favorite, index) in favoritePerson" v-bind:key="index"> 
-                                <h1> {{ favorite.personName }} </h1> 
-                                <v-list-item-title>Born: {{ favorite.personBirthYear }}</v-list-item-title>
-                                <v-list-item-title>Gender: {{ favorite.personGender }}</v-list-item-title>
-                                <v-list-item-title>Eye Color: {{ favorite.personEyeColor }}</v-list-item-title>
-                                <v-list-item-title>Height: {{ favorite.personHeight }}cm</v-list-item-title>
-                            </v-list-item-content>
-                        </v-list-item>
-                </v-card-text>
-            </v-card>
-        </v-footer>
-    </v-card>
-    -->
     <v-container class="testContainer">
          
         <v-row class="testContainer"> 

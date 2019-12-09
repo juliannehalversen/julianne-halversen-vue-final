@@ -15,7 +15,6 @@
                         <v-list-item-title>Gender: {{ person.gender }}</v-list-item-title>
                         <v-list-item-title>Eye Color: {{ person.eye_color }}</v-list-item-title>
                         <v-list-item-title>Height: {{ person.height }}cm</v-list-item-title>
-                        <!--{{ person.gender | toUppercase }} -->
                     </v-list-item-content>
                 </v-list-item>
                 <v-btn @click="addFavorite">Add to Favorites</v-btn><br><br>
@@ -45,8 +44,6 @@ export default {
                 personEyeColor: this.person.eye_color,
                 personHeight: this.person.height,       
             };
-            //let favorites = [];
-            //favorites.push(favoritePersonInfo);
             this.$store.state.favorites.push(favoritePersonInfo);
             console.log(favoritePersonInfo);
         },
@@ -66,9 +63,6 @@ h4.name {
 }
 .fade-enter-active {
   transition: opacity 3s;
-}
-.fade-leave {
-  /*opacity: 1; */
 }
 .fade-leave-active {
    transition: opacity .75s;

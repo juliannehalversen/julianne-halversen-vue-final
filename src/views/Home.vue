@@ -64,7 +64,6 @@
 <script>
 import axios from "axios";
 import AppHeader from "../components/header";
-//import AppFooter from '../components/footer';
 import PersonGrid from "../components/PersonGrid";
 import Favorites from "../components/favorites";
 
@@ -72,18 +71,15 @@ export default {
   name: "App",
   components: {
     AppHeader,
-    //AppFooter,
     PersonGrid,
     Favorites
   },
   data: () => ({
     people: [],
-    //planets: [],
     fetchedData: [],
     show: false,
     load: true,
     elementWidth: 100,
-    show: false,
   }),
 
   methods: {
@@ -97,53 +93,6 @@ export default {
         })
         .catch(error => console.log(error));
     },
-    /*
-  beforeEnter(el) {
-    console.log('beforeEnter');
-    this.elementWidth = 100;
-    el.style.width = this.elementWidth + 'px';
-  },
-  enter(el, done) {
-    console.log('enter');
-    let round = 1;
-    const interval = setInterval(() => {
-        el.style.width = (this.elementWidth + round * 10) + 'px';
-        round++;
-        if (round> 20) {
-          clearInterval(interval);
-          done();
-        }
-    }, 20);
-  },
-  afterEnter(el) {
-    console.log('afterEnter');
-  },
-  enterCancelled(el) {
-    console.log('enterCancelled');
-  },
-  beforeLeave(el) {
-    console.log('beforeLeave');
-    this.elementWidth = '300px';
-    el.style.width = this.elementWidth + 'px';
-  },
-  leave(el, done) {
-    console.log('leave');
-    let round = 1;
-    const interval = setInterval(() => {
-        el.style.width = (this.elementWidth - round * 10) + 'px';
-        round++;
-        if (round> 20) {
-          clearInterval(interval);
-          done();
-        }
-    }, 20);
-  },
-  afterLeave(el) {
-    console.log('afterLeave');
-  },
-  leaveCancelled(el) {
-    console.log('leaveCancelled');
-  },*/
   }
 };
 </script>
@@ -155,7 +104,6 @@ export default {
   margin-bottom: 30px;
 }
 #getDataBtn {
-  /*margin-left: 10%;*/
   border: 1px solid white;
 }
 * {
@@ -167,49 +115,4 @@ export default {
 .v-content__wrap {
   background-color: yellow;
 }
-/*
-.fade-enter {
-  opacity: 0;
-}
-.fade-enter-active {
-  transition: opacity 2s;
-}
-.fade-leave-active {
-   transition: opacity 2s;
-   opacity: 0;
-}
-
-.slide-enter {
-  opacity: 0;
-}
-.slide-enter-active {
-  animation: slide-in 1s ease-out forwards;
-  transition: opacity .5s ;
-}
-.slide-leave {
-  
-}
-.slide-leave-active {
-  animation: slide-out 1s ease-out forwards;
-  transition: opacity 1s;
-  opacity: 0;
-}
-
-@keyframes slide-in {
-  from {
-      transform: translateY(20px);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
-@keyframes slide-out {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(20px);
-  }
-}
-*/
 </style>

@@ -1,22 +1,21 @@
 <template>
     <div>
         <AppHeader></AppHeader>
+        <section class="intro">A long time ago, in a galaxy far,<br> far away....</section>
         <div class="fade"></div>
 
             <section class="star-wars">
 
             <div class="crawl">
-
-                <div class="title">
-                <h3>DGM 3790</h3>
+              <div class="title">
+                <h2>DGM 3790</h2>
                 <h1>A New Hope</h1>
-                </div>
+              </div>
                 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>      
-
+                <p>It is a period of fear. Tired college students, striking from a hidden base, have won their first victory against Finals Week.</p><br>
+                <p>During the battle, students managed to steal secret plans to Thor's ultimate weapon, VueJs, a framework with enough power to create or destroy an entire web application.</p><br>
+                <p>Pursued by UVU's sinister agents, Julie Halversen races home aboard her starship to enjoy the holidays. She is the custodian of the stolen plans that can produce degrees for her and the galaxy. The fate of the next semester is in her hands...</p><br>
+                
             </div>
 
             </section>
@@ -25,7 +24,8 @@
 </template>
 
 <script>
-import AppHeader from '../components/header'
+import AppHeader from '../components/header';
+
 export default {
     components: {
         AppHeader,
@@ -40,6 +40,32 @@ body {
   background: #000;
   overflow: hidden;
 }
+.intro {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    z-index: 1;
+    animation: intro 4s ease-out 1s;
+    color: rgb(75, 213, 238);
+    font-weight: 400;
+    font-size: 300%;
+    opacity: 0;
+}
+
+@keyframes intro {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 
 .fade {
   position: relative;
@@ -48,6 +74,8 @@ body {
   top: -25px;
   background-image: linear-gradient(0deg, transparent, black 75%);
   z-index: 1;
+  opacity: .5;
+  transition: 3s;
 }
 
 .star-wars {
@@ -69,7 +97,8 @@ body {
   position: relative;
   top: 9999px;
   transform-origin: 50% 100%;
-  animation: crawl 60s linear;
+  animation: crawl 70s linear 6s;
+  transition: opacity 5s ease-out;
 }
 
 .crawl > .title {

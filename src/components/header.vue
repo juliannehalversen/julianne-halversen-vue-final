@@ -1,33 +1,33 @@
 <template>
-    <div>
-        <v-app-bar app>
-            <v-toolbar-title class="headline text-uppercase">
-                <span v-local-highlight:background.delayed="'grey'">STAR</span>
-                <span class="font-weight-light">WARS</span>
-            </v-toolbar-title>
-            <v-spacer></v-spacer>
-            
-            <v-btn text>
-                <router-link to="/" exact>Home</router-link>
-            </v-btn>
+  <div>
+      <v-app-bar app>
+          <v-toolbar-title class="headline text-uppercase">
+            <span v-local-highlight:background.delayed="'grey'">STAR</span>
+            <span class="font-weight-light">WARS</span>
+          </v-toolbar-title>
+          <v-spacer></v-spacer>
+          
+          <v-btn text>
+            <router-link to="/" exact>Home</router-link>
+          </v-btn>
 
-            <v-btn text>
-                <router-link to="form">Form</router-link>
-            </v-btn>
+          <v-btn text>
+            <router-link to="form">Form</router-link>
+          </v-btn>
 
-            <v-btn text>
-                <router-link to="about">About</router-link>
-            </v-btn>
+          <v-btn text>
+            <router-link to="about">About</router-link>
+          </v-btn>
 
-             <v-btn
-                text
-                href="https://github.com/juliannehalversen"
-                target="_blank"
-            >
-                <span class="mr-2">Julianne Halversen</span>
-            </v-btn>
-        </v-app-bar>
-    </div>
+          <v-btn
+            text
+            href="https://github.com/juliannehalversen"
+            target="_blank"
+          >
+          <span class="mr-2">Julianne Halversen</span>
+        </v-btn>
+    </v-app-bar>
+  </div>
 </template>
 
 <script>

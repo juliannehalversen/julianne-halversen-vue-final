@@ -24,15 +24,7 @@
         label="E-mail"
         required
       ></v-text-field>
-  <!--
-      <v-select
-        v-model="select"
-        :items="items"
-        :rules="[v => !!v || 'Item is required']"
-        label="Item"
-        required
-      ></v-select>
-  -->
+
       <v-btn
         :disabled="!valid"
         color="success"
@@ -53,18 +45,7 @@
       <v-btn color="warning" @click="fetchData">Get My Submitted Data</v-btn>
       <br>
       <br>
-      <!--
-      <ul>
-        <li v-for="u in users">{{ u.name }} - {{ u.email }}</li>
-      </ul>
-      
-      <v-list-item>
-        <v-list-item-content>
-            <v-list-item-title v-for="u in users">Name: {{ u.name }} <br> Email: {{ u.email }}<br><br></v-list-item-title>
-        </v-list-item-content>
-      </v-list-item>
-    -->
-    
+
     <v-expansion-panels>
       <v-expansion-panel
         v-for="u in users" :key="u">
@@ -76,43 +57,20 @@
   </v-expansion-panels>
 
     </v-form>
-    <img src="../assets/movieposter.jpg" style="width: 50%">
-    <!--<AppFooter></AppFooter>-->
+    <img src="../assets/stars2.jpg">
 </div>
 </template>
 
 <script>
 import axios from 'axios';
 import AppHeader from '../components/header';
-import AppFooter from '../components/footer';
+
 
 export default {
   components: {
     AppHeader,
-    AppFooter,
   },
-/* default form data from Vuetify, restructured to object for VueResource post call
-data: () => ({
-    valid: true,
-    name: '',
-    nameRules: [
-      v => !!v || 'Name is required',
-      v => (v && v.length <= 10) || 'Name must be less than 10 characters',
-    ],
-    email: '',
-    emailRules: [
-      v => !!v || 'E-mail is required',
-      v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
-    ],
-    select: null,
-    items: [
-      'Item 1',
-      'Item 2',
-      'Item 3',
-      'Item 4',
-    ],
-    checkbox: false,
-  }), */
+
   data() {
     return {
       user: {

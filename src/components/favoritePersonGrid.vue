@@ -10,7 +10,6 @@
 </template>
 
 <script>
-//import AppFooter from './components/footer';
 import Favorites from '../components/favorites';
 
 export default {

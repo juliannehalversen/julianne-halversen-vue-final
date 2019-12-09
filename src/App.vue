@@ -1,10 +1,6 @@
-
-<!-- if there are issues then copy code from Home.vue, all code is there that was in this page -->
 <template>
   <v-app>      
         <router-view></router-view>
-
-
   </v-app>
 </template>
 
@@ -16,6 +12,6 @@ export default {
 
 <style scoped>
 * {
-  background-image: url('./assets/stars1.jpg');
+  background-image: url('./assets/stars2.jpg');
 }
 </style>
