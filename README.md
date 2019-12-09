@@ -29,17 +29,17 @@ https://github.com/juliannehalversen
 
 ### Create a custom directive and use it on at least one of your components.
 
-[Home.vue](../blob/master/src/views/Home.vue)
+[header.vue](../blob/master/components/header.vue) used in [Home.vue](../blob/master/src/views/Home.vue)
 #### Title changes color in header
 
 ### Use a mix of animations and transitions to enhance some aspects of your project
 
-[StarWarsPerson.vue](../blob/master/components/StarWarsPerson.vue)
+[StarWarsPerson.vue](../blob/master/components/StarWarsPerson.vue) and [About.vue](../blob/master/src/views/About.vue)
 #### animations/transitions are on the Star Wars people cards
 
 ### Connect to a server using HTTP and display retrieved data (use vue-resource or Axios)
 
-[header.vue](../blob/master/components/header.vue) used in [Home.vue](../blob/master/src/views/Home.vue)
+[Home.vue](../blob/master/src/views/Home.vue)
 
 ### Provide at least 3 different routes with navigation between them using vue-router
 
