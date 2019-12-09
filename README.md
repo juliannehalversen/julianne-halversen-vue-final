@@ -39,7 +39,7 @@ https://github.com/juliannehalversen
 
 ### Connect to a server using HTTP and display retrieved data (use vue-resource or Axios)
 
-[Home.vue](../blob/master/src/views/Home.vue)
+[header.vue](../blob/master/components/header.vue) used in [Home.vue](../blob/master/src/views/Home.vue)
 
 ### Provide at least 3 different routes with navigation between them using vue-router
 
